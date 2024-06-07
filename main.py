@@ -1,4 +1,4 @@
-from .track_with_x3d import tracking1
+from track_with_x3d import tracking1
 import time
 import torch
 import cv2
