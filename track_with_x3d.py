@@ -4,7 +4,8 @@ from ultralytics import YOLO
 from super_gradients.training import models
 from super_gradients.training.models.detection_models.customizable_detector import CustomizableDetector
 from super_gradients.training.pipelines.pipelines import DetectionPipeline
-
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(f'***************************************************************************************\n device : {device}')
 
 def get_prediction(image_in, pipeline):
     # Preprocess
