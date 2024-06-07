@@ -1,3 +1,7 @@
+import json
+import urllib
+import torch
+
 def prediction(model, liste_frame):
     tensor_liste = [torch.from_numpy(arr) for arr in liste_frame]
     torch_tensor = torch.stack(tensor_liste)
