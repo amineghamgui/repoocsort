@@ -1,4 +1,4 @@
-from .x3d_infrences import prediction
+from x3d_infrences import prediction
 
 def get_prediction(image_in, pipeline):
     # Preprocess
