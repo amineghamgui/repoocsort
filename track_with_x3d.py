@@ -6,7 +6,7 @@ from super_gradients.training.models.detection_models.customizable_detector impo
 from super_gradients.training.pipelines.pipelines import DetectionPipeline
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f'***************************************************************************************\n device : {device}')
-
+import torch
 def get_prediction(image_in, pipeline):
     # Preprocess
     preprocessed_image, processing_metadata = pipeline.image_processor.preprocess_image(image=image_in.copy())
